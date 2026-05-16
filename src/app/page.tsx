@@ -15,9 +15,9 @@ import { BsGraphUpArrow, BsShieldCheck, BsPeopleFill } from "react-icons/bs";
 /* ══════════════════════════════════════════════
    CONFIG — Update these before going live
 ══════════════════════════════════════════════ */
-const WA_NUMBER = "919999999999";               // 91 + 10-digit number
-const ADMIN_EMAIL = "admissions@cybersalesacademy.in";
-const BROCHURE_URL = "/brochure.pdf";              // PDF in /public/
+const WA_NUMBER = "917304974466";               // 91 + 10-digit number
+const ADMIN_EMAIL = "admissions@cybersalesmastery.com";
+const BROCHURE_URL = "https://drive.google.com/file/d/14rf86v5zDzJ-L79yo8tPf9F_RiZzunRk/view?usp=drive_link";
 /* ══════════════════════════════════════════════ */
 
 interface FormState {
@@ -169,13 +169,17 @@ export default function Home() {
     setSubmitting(false);
     setSuccess(true);
 
-    // Auto-download brochure
-    const a = document.createElement("a");
-    a.href = BROCHURE_URL;
-    a.download = "CyberSalesAcademy-Brochure.pdf";
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
+    // Auto-download or open brochure
+    if (BROCHURE_URL.startsWith("http")) {
+      window.open(BROCHURE_URL, "_blank");
+    } else {
+      const a = document.createElement("a");
+      a.href = BROCHURE_URL;
+      a.download = "CyberSalesAcademy-Brochure.pdf";
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+    }
   };
 
   const WA_HREF = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(
