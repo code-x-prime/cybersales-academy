@@ -24,26 +24,26 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Cybersecurity Sales Academy | India's #1 Cyber Sales Program — CCSP™",
+  title: "Cybersecurity Sales Academy | India's #1 Cyber Sales Program — CCSM™",
   description:
-    "India's first 14-week Cybersecurity Sales Leadership Program. Earn CCSP™ certification, master enterprise cyber sales, and get placement support at top firms. Enroll now.",
+    "India's first 14-week Cybersecurity Sales Leadership Program. Earn CCSM™ certification, master enterprise cyber sales, and get placement support at top firms. Enroll now.",
   keywords:
-    "cybersecurity sales training India, CCSP certification, cyber sales academy, B2B sales training cybersecurity, IT sales career India, cybersecurity job placement",
+    "cybersecurity sales training India, CCSM certification, cyber sales academy, B2B sales training cybersecurity, IT sales career India, cybersecurity job placement",
   authors: [{ name: "CyberSales Academy" }],
   robots: "index, follow",
   openGraph: {
-    title: "Cybersecurity Sales Academy — CCSP™ Certified | India",
+    title: "Cybersecurity Sales Academy — CCSM™ Certified | India",
     description:
-      "14-week intensive program to become a certified cybersecurity sales professional. Placement support, CCSP™ certification, live CISO pitch.",
+      "14-week intensive program to become a certified cybersecurity sales professional. Placement support, CCSM™ certification, live CISO pitch.",
     type: "website",
     locale: "en_IN",
     siteName: "CyberSales Academy",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Cybersecurity Sales Academy India — CCSP™",
+    title: "Cybersecurity Sales Academy India — CCSM™",
     description:
-      "14-week accelerator for cybersecurity sales professionals. CCSP™ certified. Placement focused.",
+      "14-week accelerator for cybersecurity sales professionals. CCSM™ certified. Placement focused.",
   },
 };
 

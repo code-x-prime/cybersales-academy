@@ -11,6 +11,7 @@ import {
 } from "react-icons/fa";
 import { MdBusinessCenter } from "react-icons/md";
 import { BsGraphUpArrow, BsShieldCheck, BsPeopleFill } from "react-icons/bs";
+import Image from "next/image";
 
 /* ══════════════════════════════════════════════
    CONFIG — Update these before going live
@@ -74,7 +75,7 @@ const CURRICULUM: CurriculumRow[] = [
   { wk: "WK 12", dot: "dot-green", title: "Executive Presence & CXO Communication", desc: "Master boardroom storytelling. Present confidently to senior CISOs and leadership.", tag: "bg-green-faint", label: "Performance" },
   { wk: "WK 13", dot: "dot-green", title: "Data-Driven Selling & Personal Branding", desc: "Pipeline metrics, forecasting accuracy, LinkedIn authority for the modern seller.", tag: "bg-green-faint", label: "Performance" },
   {
-    wk: "WK 14", dot: "dot-gold", title: "🏆 Capstone Project & CCSP™ Certification", desc: "Full GTM plan + live pitch to CISO Panel. Top performers get interview placement.", tag: "bg-gold-faint", label: "Capstone",
+    wk: "WK 14", dot: "dot-gold", title: "🏆 Capstone Project & CCSM™ Certification", desc: "Full GTM plan + live pitch to CISO Panel. Top performers get interview placement.", tag: "bg-gold-faint", label: "Capstone",
     dotStyle: { borderColor: "var(--gold)", background: "var(--gold)" },
     cardStyle: { borderColor: "rgba(245,166,35,0.35)" },
   },
@@ -89,7 +90,7 @@ const WHO_CARDS = [
 
 const OUTCOMES = [
   { Icon: FaChartLine, bg: "bg-cyan-faint", title: "Sales Ready from Day One", desc: "Complete prospecting-to-close capability. Run discovery calls, handle objections, and close enterprise deals." },
-  { Icon: FaCertificate, bg: "bg-gold-faint", title: "CCSP™ Certification", desc: "Earn India's premier Certified Cybersecurity Sales Professional credential — recognised across OEMs and MSSPs." },
+  { Icon: FaCertificate, bg: "bg-gold-faint", title: "CCSM™ Certification", desc: "Earn India's premier Certified Cybersecurity Sales Master credential — recognised across OEMs and MSSPs." },
   { Icon: FaUsers, bg: "bg-green-faint", title: "Industry Network & Placement", desc: "Top performers receive interview referrals and internship placements at cybersecurity firms across India." },
   { Icon: BsGraphUpArrow, bg: "bg-purple-faint", title: "Pipeline & Brand Mastery", desc: "Sales dashboards, accurate forecasting, and a LinkedIn personal brand that attracts inbound opportunities." },
 ];
@@ -130,7 +131,7 @@ const TESTIMONIALS = [
 const FAQS = [
   { q: "Who is this program designed for?", a: "The program is for anyone who wants to build a career in cybersecurity sales — fresh graduates, IT/tech sales reps, pre-sales engineers, and sales managers looking to specialise." },
   { q: "Do I need a technical background to enrol?", a: "No prior technical background is required. The program teaches cybersecurity concepts from a business and buyer perspective, so you learn what you need to sell effectively." },
-  { q: "What is the CCSP™ certification?", a: "CCSP™ (Certified Cybersecurity Sales Professional) is India's premier credential for cybersecurity sales professionals, recognised by leading OEMs and MSSPs across the country." },
+  { q: "What is the CCSM™ certification?", a: "CCSM™ (Certified Cybersecurity Sales Master) is India's premier credential for cybersecurity sales professionals, recognised by leading OEMs and MSSPs across the country." },
   { q: "Is the program online or in-person?", a: "The program is offered in a hybrid format — live online sessions with in-person workshops and the final CISO Panel Pitch assessment." },
   { q: "What placement support is provided?", a: "Top performers receive direct interview referrals to our partner cybersecurity companies. We also provide resume reviews, LinkedIn profile coaching, and mock interview sessions." },
   { q: "When does the next cohort start?", a: "Applications are open now. Cohorts start on a rolling basis. Fill in the enquiry form or contact us on WhatsApp to know the next available date." },
@@ -192,8 +193,9 @@ export default function Home() {
     <>
       {/* ══════════ NAV ══════════ */}
       <nav className="nav-bar" role="navigation" aria-label="Main navigation">
-        <a href="/" className="nav-logo-text" aria-label="CyberSales Academy home">
-          CYBER<span>SALES</span> ACADEMY
+        <a href="/" className="nav-logo-link" aria-label="CyberSales Academy home">
+          <Image width={200} height={200} src="/logo.png" alt="CyberSales Academy Logo" className="md:h-20 h-16 w-full object-contain bg-white rounded-md" />
+
         </a>
 
         <ul className="desktop-nav-links" style={{ display: "flex", gap: "2.2rem", listStyle: "none", margin: 0 }}>
@@ -246,7 +248,7 @@ export default function Home() {
 
         <p className="hero-sub">
           A 14-week accelerator bridging technical expertise and enterprise sales mastery —
-          with a CCSP™ certification that top employers across India trust.
+          with a CCSM™ certification that top employers across India trust.
         </p>
 
         <div className="hero-actions">
@@ -260,7 +262,7 @@ export default function Home() {
 
         {/* Trust bar */}
         <div className="hero-trust" aria-label="Program highlights">
-          <span className="trust-item"><BsShieldCheck size={13} color="var(--cyan)" /> CCSP™ Certified</span>
+          <span className="trust-item"><BsShieldCheck size={13} color="var(--cyan)" /> CCSM™ Certified</span>
           <span className="trust-dot" aria-hidden="true" />
           <span className="trust-item"><BsPeopleFill size={13} color="var(--cyan)" /> 500+ Alumni</span>
           <span className="trust-dot" aria-hidden="true" />
@@ -275,7 +277,7 @@ export default function Home() {
         {[
           { num: "14", label: "Weeks Intensive" },
           { num: "3", label: "Learning Stages" },
-          { num: "CCSP™", label: "Industry Cert" },
+          { num: "CCSM™", label: "Industry Cert" },
           { num: "100%", label: "Placement Focused" },
           { num: "₹0", label: "Excuse for the Gap" },
         ].map((s) => (
@@ -492,7 +494,7 @@ export default function Home() {
             <div className="capstone-box">
               <div style={{ display: "inline-flex", alignItems: "center", gap: "0.6rem", background: "rgba(245,166,35,0.1)", border: "1px solid rgba(245,166,35,0.3)", color: "var(--gold)", fontFamily: "var(--font-barlow-condensed), sans-serif", fontSize: "1.05rem", fontWeight: 700, letterSpacing: "0.07em", textTransform: "uppercase", padding: "0.55rem 1.3rem", borderRadius: 5, marginBottom: "1.3rem" }}>
                 <FaTrophy size={15} />
-                Certified Cybersecurity Sales Professional (CCSP™)
+                Certified Cybersecurity Sales Master (CCSM™)
               </div>
               <p style={{ color: "var(--text-secondary)", fontSize: "0.88rem", maxWidth: 560, margin: "0 auto 2rem", lineHeight: 1.7 }}>
                 Teams select a real cybersecurity solution (MDR, XDR, DLP, IAM, SOC) and build a
@@ -569,7 +571,7 @@ export default function Home() {
 
         {/* Bottom reassurance */}
         <div style={{ display: "flex", gap: "2rem", justifyContent: "center", marginTop: "2.5rem", flexWrap: "wrap" }}>
-          {["14-Week Program", "CCSP™ Certified", "Placement Support", "Limited Seats"].map((item) => (
+          {["14-Week Program", "CCSM™ Certified", "Placement Support", "Limited Seats"].map((item) => (
             <span key={item} style={{ display: "flex", alignItems: "center", gap: "0.4rem", fontSize: "0.78rem", color: "var(--text-muted)", fontFamily: "var(--font-outfit), sans-serif" }}>
               <FaCheckCircle size={12} color="var(--green)" /> {item}
             </span>
@@ -582,14 +584,15 @@ export default function Home() {
         role="contentinfo"
         style={{ position: "relative", zIndex: 1, borderTop: "1px solid var(--border)", background: "rgba(0,0,0,0.32)", padding: "2.5rem 2rem", display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: "1.2rem" }}
       >
-        <a href="/" className="nav-logo-text" aria-label="CyberSales Academy home">
-          CYBER<span>SALES</span> ACADEMY
+        <a href="/" className="nav-logo-link" aria-label="CyberSales Academy home">
+          <Image width={200} height={200} src="/logo.png" alt="CyberSales Academy Logo" className="md:h-20 h-16 w-full object-contain bg-white rounded-md" />
+
         </a>
         <p style={{ fontSize: "0.75rem", color: "var(--text-muted)", fontFamily: "var(--font-outfit), sans-serif" }}>
           © 2025 Cybersecurity Sales Academy. All rights reserved.
         </p>
         <span style={{ fontFamily: "var(--font-jetbrains-mono), monospace", fontSize: "0.64rem", color: "var(--text-muted)", letterSpacing: "0.12em" }}>
-          CCSP™ · 14 WEEKS · INDIA
+          CCSM™ · 14 WEEKS · INDIA
         </span>
       </footer>
 
@@ -614,7 +617,10 @@ export default function Home() {
 
             {!success ? (
               <>
-                <span className="section-tag" style={{ marginBottom: "0.5rem" }}>{"//"} Brochure Request</span>
+                <div style={{ display: "flex", alignItems: "center", gap: "0.6rem", marginBottom: "0.75rem" }}>
+                  <img src="/logo.png" alt="Logo" style={{ height: "24px", width: "auto", objectFit: "contain" }} />
+                  <span className="section-tag" style={{ margin: 0 }}>{"//"} Brochure Request</span>
+                </div>
                 <h3 id="modal-title" style={{ fontFamily: "var(--font-barlow-condensed), sans-serif", fontSize: "1.8rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.04em", marginBottom: "0.4rem", lineHeight: 1 }}>
                   Get the Full Program Guide
                 </h3>
