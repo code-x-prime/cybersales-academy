@@ -618,7 +618,7 @@ export default function Home() {
             {!success ? (
               <>
                 <div style={{ display: "flex", alignItems: "center", gap: "0.6rem", marginBottom: "0.75rem" }}>
-                  <img src="/logo.png" alt="Logo" style={{ height: "24px", width: "auto", objectFit: "contain" }} />
+                  <Image src="/logo.png" alt="Logo" width={80} height={24} style={{ height: "35px", width: "auto", objectFit: "contain" }} />
                   <span className="section-tag" style={{ margin: 0 }}>{"//"} Brochure Request</span>
                 </div>
                 <h3 id="modal-title" style={{ fontFamily: "var(--font-barlow-condensed), sans-serif", fontSize: "1.8rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.04em", marginBottom: "0.4rem", lineHeight: 1 }}>
