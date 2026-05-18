@@ -7,7 +7,7 @@ module.exports = {
             cwd: "/root/cybersales-academy",
             env: {
                 NODE_ENV: "production",
-                PORT: 7002
+                PORT: 7003
             }
         }
     ]
