@@ -90,7 +90,7 @@ const WHO_CARDS = [
 
 const OUTCOMES = [
   { Icon: FaChartLine, bg: "bg-cyan-faint", title: "Sales Ready from Day One", desc: "Complete prospecting-to-close capability. Run discovery calls, handle objections, and close enterprise deals." },
-  { Icon: FaCertificate, bg: "bg-gold-faint", title: "CCSM™ Certification", desc: "Earn India's premier Certified Cybersecurity Sales Master credential — recognised across OEMs and MSSPs." },
+  { Icon: FaCertificate, bg: "bg-gold-faint", title: "CCSM™ Certification", desc: "Earn India's premier Certified Cybersecurity Sales Mastery credential — recognised across OEMs and MSSPs." },
   { Icon: FaUsers, bg: "bg-green-faint", title: "Industry Network & Placement", desc: "Top performers receive interview referrals and internship placements at cybersecurity firms across India." },
   { Icon: BsGraphUpArrow, bg: "bg-purple-faint", title: "Pipeline & Brand Mastery", desc: "Sales dashboards, accurate forecasting, and a LinkedIn personal brand that attracts inbound opportunities." },
 ];
@@ -131,7 +131,7 @@ const TESTIMONIALS = [
 const FAQS = [
   { q: "Who is this program designed for?", a: "The program is for anyone who wants to build a career in cybersecurity sales — fresh graduates, IT/tech sales reps, pre-sales engineers, and sales managers looking to specialise." },
   { q: "Do I need a technical background to enrol?", a: "No prior technical background is required. The program teaches cybersecurity concepts from a business and buyer perspective, so you learn what you need to sell effectively." },
-  { q: "What is the CCSM™ certification?", a: "CCSM™ (Certified Cybersecurity Sales Master) is India's premier credential for cybersecurity sales professionals, recognised by leading OEMs and MSSPs across the country." },
+  { q: "What is the CCSM™ certification?", a: "CCSM™ (Certified Cybersecurity Sales Mastery) is India's premier credential for cybersecurity sales professionals, recognised by leading OEMs and MSSPs across the country." },
   { q: "Is the program online or in-person?", a: "The program is offered in a hybrid format — live online sessions with in-person workshops and the final CISO Panel Pitch assessment." },
   { q: "What placement support is provided?", a: "Top performers receive direct interview referrals to our partner cybersecurity companies. We also provide resume reviews, LinkedIn profile coaching, and mock interview sessions." },
   { q: "When does the next cohort start?", a: "Applications are open now. Cohorts start on a rolling basis. Fill in the enquiry form or contact us on WhatsApp to know the next available date." },
@@ -494,7 +494,7 @@ export default function Home() {
             <div className="capstone-box">
               <div style={{ display: "inline-flex", alignItems: "center", gap: "0.6rem", background: "rgba(245,166,35,0.1)", border: "1px solid rgba(245,166,35,0.3)", color: "var(--gold)", fontFamily: "var(--font-barlow-condensed), sans-serif", fontSize: "1.05rem", fontWeight: 700, letterSpacing: "0.07em", textTransform: "uppercase", padding: "0.55rem 1.3rem", borderRadius: 5, marginBottom: "1.3rem" }}>
                 <FaTrophy size={15} />
-                Certified Cybersecurity Sales Master (CCSM™)
+                Certified Cybersecurity Sales Mastery (CCSM™)
               </div>
               <p style={{ color: "var(--text-secondary)", fontSize: "0.88rem", maxWidth: 560, margin: "0 auto 2rem", lineHeight: 1.7 }}>
                 Teams select a real cybersecurity solution (MDR, XDR, DLP, IAM, SOC) and build a
