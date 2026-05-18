@@ -589,7 +589,7 @@ export default function Home() {
 
         </a>
         <p style={{ fontSize: "0.75rem", color: "var(--text-muted)", fontFamily: "var(--font-outfit), sans-serif" }}>
-          © 2025 Cybersecurity Sales Academy. All rights reserved.
+          © 2026 Cybersecurity Sales Academy. All rights reserved.
         </p>
         <span style={{ fontFamily: "var(--font-jetbrains-mono), monospace", fontSize: "0.64rem", color: "var(--text-muted)", letterSpacing: "0.12em" }}>
           CCSM™ · 14 WEEKS · INDIA
