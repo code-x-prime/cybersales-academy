@@ -18,7 +18,7 @@ import Image from "next/image";
 ══════════════════════════════════════════════ */
 const WA_NUMBER = "917304974466";               // 91 + 10-digit number
 const ADMIN_EMAIL = "admissions@cybersalesmastery.com";
-const BROCHURE_URL = "https://drive.google.com/file/d/14rf86v5zDzJ-L79yo8tPf9F_RiZzunRk/view?usp=drive_link";
+const BROCHURE_URL = "https://drive.google.com/drive/folders/1WyvDmeaaad0jT5QA2-DmMf_86TuX3J8S";
 /* ══════════════════════════════════════════════ */
 
 interface FormState {
